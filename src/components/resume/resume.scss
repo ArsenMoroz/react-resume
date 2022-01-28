@@ -1,0 +1,46 @@
+@import "../../global.scss";
+
+.resume{
+    background-color: $main2;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    /*h1{
+        display: flex;
+        width: 100%;
+        height: 70px;
+        font-size: 50px;
+        align-items: center;
+        justify-content: center;
+    }*/
+
+        .left{
+            flex: 0.5;   
+            margin: 30px 30px;   
+            align-items: center;
+            justify-content: center;      
+        }
+
+        .right{
+            flex: 0.5;
+            margin: 30px 30px;  
+        }
+
+        @media only screen and (max-width: 1170px) {
+            .vertical-timeline-element-date {
+              display: block !important;
+              float: none !important;
+              color: rgb(44, 44, 44);
+              margin-top: 1.5em;
+              width: 45%;
+            }
+
+            .resume{
+                display: block;
+                float: none;
+            }
+          }
+}
