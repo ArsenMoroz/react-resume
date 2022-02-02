@@ -12,8 +12,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 function App() {
-  let workIconStyles = { background: "#06D6A0" };
-  let schoolIconStyles = { background: "#f9c74f" };
+  let workIconStyles = { background: "#49A7FF" };
+  let schoolIconStyles = { background: "#49A7FF" };
 
   return (
     <div>
@@ -32,6 +32,7 @@ function App() {
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
+              //style={{ background: 'red' }}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}

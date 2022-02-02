@@ -13,7 +13,7 @@ export default function Contact() {
     return (
         <div className="contact" id="contact">
             <div className="left">
-                <img src="assets/shake.svg" alt="" />
+                <img src="assets/vector-graphics-computer-icons-clip-art-illustration-image-handshake-cartoon.jpg" alt="" />
             </div>
             <div className="right">
                 <h2>Contact.</h2>
@@ -26,4 +26,4 @@ export default function Contact() {
             </div>
         </div>
     )
-}
+    }

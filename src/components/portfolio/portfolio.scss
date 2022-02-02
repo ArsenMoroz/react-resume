@@ -17,11 +17,11 @@
         text-transform: uppercase;
         font-size: 60px;
         font-family: 'Catamaran', sans-serif;
-        color: rgba($blue, 0.8);
+        color: rgba(crimson, 0.8);
         &:before {
           position: absolute;
           content: $random-text;
-          color: rgba(crimson, 0.8);
+          color: rgba($blue, 0.8);
           top: 3px;
           left: 4px;
         }
@@ -30,7 +30,7 @@
           position: absolute;
           content: $random-text;
           color: rgba(white, 0.8);
-          top: 5px;
+          top: 6px;
           left: 8px;
         }
 

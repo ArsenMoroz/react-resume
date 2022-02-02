@@ -6,6 +6,9 @@ import Education from "./components/education/Education.jsx"
 import Experience from "./components/experience/Experience.jsx"
 import Testimonials from "./components/testimonials/Testimonials.jsx"
 import Contact from "./components/contact/Contact.jsx"
+import Contact3 from "./components/contact3/Contact3.jsx"
+
+
 import Menu from "./components/menu/Menu.jsx"
 
 import "./app.scss"
@@ -24,7 +27,7 @@ function App() {
         <Portfolio/>
         <Works/>
         <Testimonials/>
-        <Contact/>
+        <Contact3/>
       </div>
     </div>
   );

@@ -20,8 +20,9 @@
         &:before {
           position: absolute;
           content: $random-text;
-          color: rgba(#f9c74f, 0.8);
+          color: rgba(#49A7FF, 0.8);
           top: 3px;
+          left: 547px;
         }
         
         &:after {
@@ -30,6 +31,7 @@
           content: $random-text;
           color: rgba(white, 0.8);
           top: 6px;
+          left: 551px;
         }
 
         @include mobile{
