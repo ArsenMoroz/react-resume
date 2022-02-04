@@ -11,7 +11,7 @@ export default function Testimonials() {
           icon: "assets/linkedin.png",
           url: "https://www.linkedin.com/in/illia-hladush/",
           desc:
-            "Arsen is n expert at taking innovative ideas and turning them into solutions",
+            "Arsen is an expert at taking innovative ideas and turning them into solutions",
         },
 
         {

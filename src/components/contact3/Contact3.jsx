@@ -69,7 +69,7 @@ const ContactForm = () => {
   };
 
   function generateBalls() {
-    for (var i = 0; i < Math.floor(window.innerWidth / 20); i++) {
+    for (var i = 0; i < Math.floor(window.innerWidth / 10); i++) {
       $(".gooey-animations").append(`
       <div class="ball"></div>
     `);
@@ -78,7 +78,7 @@ const ContactForm = () => {
         .eq(i)
         .css({
           bottom: "0px",
-          left: Math.random() * window.innerWidth - 100,
+          left: Math.random() * window.innerWidth - 50,
           "animation-delay": Math.random() * 5 + "s",
           transform: "translateY(" + Math.random() * 10 + "px)",
           "background-color": colors[i % 2]
@@ -86,7 +86,7 @@ const ContactForm = () => {
     }
   }
 
- //generateBalls();
+ generateBalls();
    
   window.addEventListener("resize", function (e) {
     $(".gooey-animations .ball").remove();
@@ -94,7 +94,7 @@ const ContactForm = () => {
   });
 
   return (
-    <div className="containerBox" id="#contact">
+    <div className="containerBox" id="contact">
       <div className="smallerBox">
       <div className="left">
         <div className="imgContainer">
@@ -192,23 +192,18 @@ const ContactForm = () => {
       </div>
       </div>
 
-      {/*<div className="Parent">
+      <div className="Parent">
         <div className="Column"><CallIcon className="Icon"/>+1 (437) 9850 558</div>
         <div className="Column"><EmailIcon className="Icon"/>arsenmorozz1@gmail.com</div>
         <div className="Column"><LocationOnIcon className="Icon"/>Toronto ON, Canada</div>
-                        </div>*/}
-
-      {/*<div className="inform">
-          <p><CallIcon className="sIcon"/>+1 (437) 985 0558</p>
-          <p><EmailIcon className="sIcon"/>arsenmorozz1@gmail.com</p>
-          <p><LocationOnIcon className="sIcon"/>Toronro (ON), Canada</p>
-                        </div>*/}
+      </div>
     
-      {/*<footer className="footer">
+      <div className="Footer">
 
         <div className="gooey-animations"></div>
-        <h1>This footer was made by <span>Arsen Moroz</span></h1>
-      </footer>
+        <h3>This portfolio was made by <span>Arsen Moroz</span></h3>
+        <h3>©2022 erudite.</h3>
+      </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
@@ -227,7 +222,7 @@ const ContactForm = () => {
                   <path d="M504.452 27.7002C163.193 -42.9551 25.9595 38.071 0 87.4161V328H1440V27.7002C1270.34 57.14 845.711 98.3556 504.452 27.7002Z"/>
               </clipPath>
           </defs>
-                        </svg>*/}
+      </svg>
 
 
                         
