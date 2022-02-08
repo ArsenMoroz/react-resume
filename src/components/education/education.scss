@@ -5,6 +5,12 @@
     display: flex;
     flex-direction: column;
 
+    .Header{
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
      .cyber-text {
         display: flex;
         overflow: hidden;
@@ -18,24 +24,27 @@
         font-family: 'Catamaran', sans-serif;
         color: rgba(crimson, 0.8);
         &:before {
+          width: 100%;
           position: absolute;
           content: $random-text;
           color: rgba(#49A7FF, 0.8);
           top: 3px;
-          left: 547px;
+          left: 4px;
         }
         
         &:after {
+          width: 100%;
           z-index: 2;
           position: absolute;
           content: $random-text;
           color: rgba(white, 0.8);
           top: 6px;
-          left: 551px;
+          left: 8px;
         }
 
         @include mobile{
             font-size: 20px;
         }
     }
+  }
 }

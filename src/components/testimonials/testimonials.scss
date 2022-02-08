@@ -59,7 +59,7 @@
 
         .card{
             color: #ffffff;
-            background: linear-gradient(110deg, #e79fadef, #8bbff0 ) !important;
+            background: linear-gradient(110deg, #eb93a5ef, #76b5f0 ) !important;
             width: 250px;
             height: 70%;
             border-radius: 10px;
@@ -123,6 +123,7 @@
                 padding: 10px;
                 border-radius: 10px;
                 background-color: $main2;//#a9dff8;
+                //text-shadow: 1px 1px rgb(128, 128, 128);
                 text-shadow: 1px 1px rgb(128, 128, 128);
 
                 @include mobile{

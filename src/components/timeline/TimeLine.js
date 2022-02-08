@@ -2,6 +2,8 @@ import "./timeline.css";
 import { ReactComponent as WorkIcon } from "./work.svg";
 import { ReactComponent as SchoolIcon } from "./school.svg";
 
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+
 import timelineElements from "./timelineElements";
 
 import {

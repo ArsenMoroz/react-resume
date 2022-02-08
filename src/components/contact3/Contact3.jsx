@@ -86,7 +86,7 @@ const ContactForm = () => {
     }
   }
 
- generateBalls();
+ //generateBalls();
    
   window.addEventListener("resize", function (e) {
     $(".gooey-animations .ball").remove();
@@ -200,7 +200,9 @@ const ContactForm = () => {
     
       <div className="Footer">
 
-        <div className="gooey-animations"></div>
+        <div className="gooey-animations">
+          {generateBalls()}
+        </div>
         <h3>This portfolio was made by <span>Arsen Moroz</span></h3>
         <h3>©2022 erudite.</h3>
       </div>

@@ -5,7 +5,7 @@ let timelineElementsEd = [
       location: "Toronto, Canada",
       description:
         "Seneca College, Toronto, ON",
-      buttonText: "View Backend Projects",
+      buttonText: "View Portfolio",
       date: "September 2018 – Present",
       icon: "school"
     },
@@ -15,7 +15,7 @@ let timelineElementsEd = [
       location: "Rivne, Ukraine",
       description:
         "Step Academy, Ukraine",
-      buttonText: "View Backend Projects",
+      buttonText: "View Portfolio",
       date: "September 2016 – September 2017",
       icon: "school"
     }    

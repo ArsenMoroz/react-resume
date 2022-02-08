@@ -104,6 +104,7 @@
          border-radius: 15px;
          border: 2px solid white;
       color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
     }
     
     .formInputO {
@@ -117,6 +118,7 @@
          border-radius: 15px;
          border: 2px solid white;
       color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
     }
     
     .formInputM {
@@ -131,6 +133,7 @@
          border-radius: 15px;
          border: 2px solid white;
       color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
     }
     
     .formInputO:focus {
@@ -159,16 +162,19 @@
     
     .formInputO::placeholder {
       color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
       opacity: 1;
     }
     
     .formInputT::placeholder {
       color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
       opacity: 1;
     }
     
     .formInputM::placeholder {
       color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
       opacity: 1;
     }
     
@@ -205,6 +211,7 @@
     .submit-btn {
       background-color: #5bccf6;
       color: white !important;
+      text-shadow: 1px 1px rgb(128, 128, 128);
       padding: 15px 50px;
       border: 2px solid white;
       border-radius: 10px;
@@ -244,6 +251,7 @@
       .Column{
         display: flex;
         color: white;
+        text-shadow: 1px 1px rgb(128, 128, 128);
         height: 70px;
         line-height: 70px;
         //text-align: center;
@@ -349,6 +357,7 @@
       h3 {
         z-index: 2;
         color: white;
+        text-shadow: 1px 1px rgb(128, 128, 128);
         float: left;
         font-family: "Ubuntu", sans-serif;
         font-weight: lighter;
@@ -358,6 +367,7 @@
       h1 span {
         font-weight: bold;
         color: white;
+        text-shadow: 1px 1px rgb(128, 128, 128);
         //text-shadow: 0 0 15px rgba(255, 160, 54, 0.4);
       }
     

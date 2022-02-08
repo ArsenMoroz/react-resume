@@ -6,7 +6,10 @@ import TimeLineEd from "../timeline/TimeLineEd.js"
 export default function resume() {
     return (
             <div className="education" id="education">
-                <h1 className='cyber-text'>Education</h1>
+                <div className="Header">
+                    <h1 className='cyber-text'>Education</h1>
+                </div>
+                
                 <div className="container">
                     <TimeLineEd/>
                 </div>

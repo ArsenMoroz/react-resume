@@ -1,6 +1,7 @@
 import "./intro.scss"
 import { init } from "ityped"
 import { useEffect, useRef } from "react"
+import { ProgressBar } from 'react-bootstrap';
 
 export default function Intro() {
 

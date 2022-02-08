@@ -6,7 +6,7 @@ let timelineElements = [
       location: "Rivne, Ukraine",
       description:
         "Full-stack development, improvement and maintenance of company’s software (optimized software in the way that increased the speed on 40% and the revenue of the company on 30%)",
-      buttonText: "View Backend Projects",
+      buttonText: "View Portfolio",
       date: "August 2018 - July 2019",
       icon: "work"
     },    
@@ -18,7 +18,7 @@ let timelineElements = [
       location: "Lviv, Ukraine",
       description:
         "Maintenance of the company’s personal software and hardware.",
-      buttonText: "View Backend Projects",
+      buttonText: "View Portfolio",
       date: "November 2017 - June 2018",
       icon: "work"
     }
