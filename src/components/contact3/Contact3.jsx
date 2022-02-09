@@ -43,8 +43,8 @@ const ContactForm = () => {
   const onSubmit = async (data) => {
     // Destrcture data object
     const { name, email, subject, message } = data;
-    const number = 0;
-    const leng = 128;
+    //const number = 0;
+    //const leng = 128;
 
     try {
       const templateParams = {

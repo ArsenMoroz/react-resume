@@ -5,7 +5,7 @@ import Works from "./components/skills/Skills.jsx"
 import Education from "./components/education/Education.jsx"
 import Experience from "./components/experience/Experience.jsx"
 import Testimonials from "./components/testimonials/Testimonials.jsx"
-import Contact from "./components/contact/Contact.jsx"
+//import Contact from "./components/contact/Contact.jsx"
 import Contact3 from "./components/contact3/Contact3.jsx"
 
 
