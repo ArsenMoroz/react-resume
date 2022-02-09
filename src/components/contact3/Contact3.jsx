@@ -68,7 +68,7 @@ const ContactForm = () => {
     }
   };
 
-  function generateBalls() {
+  /*function generateBalls() {
     for (var i = 0; i < Math.floor(window.innerWidth / 10); i++) {
       $(".gooey-animations").append(`
       <div class="ball"></div>
@@ -84,14 +84,14 @@ const ContactForm = () => {
           "background-color": colors[i % 2]
         });
     }
-  }
+  }*/
 
- generateBalls();
+ //generateBalls();
    
-  window.addEventListener("resize", function (e) {
+  /*window.addEventListener("resize", function (e) {
     $(".gooey-animations .ball").remove();
     generateBalls();
-  });
+  });*/
 
   return (
     <div className="containerBox" id="contact">
@@ -206,7 +206,7 @@ const ContactForm = () => {
         <h3 className="hRight">©2022 erudite.</h3>
       </div>
 
-       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+       {/*<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
           <filter id="goo">
             <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
@@ -223,7 +223,7 @@ const ContactForm = () => {
                   <path d="M504.452 27.7002C163.193 -42.9551 25.9595 38.071 0 87.4161V328H1440V27.7002C1270.34 57.14 845.711 98.3556 504.452 27.7002Z"/>
               </clipPath>
           </defs>
-      </svg>
+                        </svg>*/}
 
                         
     </div>
