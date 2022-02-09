@@ -48,7 +48,7 @@ function TimeLineEd() {
                   className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }`}
-                  href="/"
+                  href="#portfolio"
                 >
                   {element.buttonText}
                 </a>

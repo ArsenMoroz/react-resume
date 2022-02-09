@@ -8,21 +8,21 @@ export default function Works() {
     const data = [
         {
           id: "1",
-          number: "20%",
-          title: "MEAN Stack",
-          desc:
-            " of all full-stack projects are made with MEAN stack which is one of TOP 3 stacks for 2022.",
-          img:
-            "./assets/Meannn.png",
-        },
-        {
-          id: "2",
           number: "60%",
           title: "MERN Stack",
           desc:
             " of all full-stack projects are made with MERN stack which is one of TOP 3 stacks for 2022. ",
           img:
             "./assets/MERn1111.png",
+        },
+        {
+          id: "2",
+          number: "20%",
+          title: "MEAN Stack",
+          desc:
+            " of all full-stack projects are made with MEAN stack which is one of TOP 3 stacks for 2022.",
+          img:
+            "./assets/Meannn.png",
         }
         
         /*{

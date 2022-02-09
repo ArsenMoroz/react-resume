@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "../../global.scss";
 
-:root {
-  --light: #d0d1d3;
-  --dark: #040d14;
-  --green: #21ce99;
+*, *:before, *:after {
+   box-sizing: border-box;
 }
 
 .containerBox{
   display: flex;
   flex-direction: column;
   width: 100vh;
-  //margin: 0 45px;
 
   .smallerBox{
     display: flex;
@@ -21,15 +18,14 @@
 
   .left{
     flex: 0.7;
-    margin-left: 20px;
+    margin-left: 1vw;
         
         .imgContainer{
-            width: 650px; //862
-            height: 550px; //862
+            width: 47vw;
             background-color: $main2;
             border-radius: 50%;
             display:flex;
-            align-items: center;//flex-end
+            align-items: center;
             justify-content: center;
             float: right;
 
@@ -51,18 +47,18 @@
 
   .right{
     align-items: center;
-    margin-left: 10px;
+    margin-left: 1vw;
 
     h1.mainP{
-            width: 390px;
-            margin-left: 170px;
+            width: 35vw;
+            margin-left: 12vw;
             overflow: hidden;
             align-items: center;
             justify-content: space-around;
             $random-text: 'Contact Me';
             position: relative;
             text-transform: uppercase;
-            font-size: 60px;
+            font-size: 4.1vw;
             font-family: 'Catamaran', sans-serif;
             color: rgba(crimson, 0.8);
             &:before {
@@ -84,21 +80,19 @@
     }
     
     form {
-      margin-top: 20px;
+      margin-top: 2.3vh;
       background: #5bccf6;
     }
     
     .formRow {
-      margin: 10px 0 20px 0;
-      width: 700px;
+      margin: 1.15vh 0 2.3vh 0;
+      width: 48vw;
     }
     
     .formInputT {
-      width: 330px;
-      padding: 15px 10px;
+      width: 22.9vw;
+      padding: 1.8vh 1vw;
       background-color: #5bccf6;
-      //box-shadow: 0 0 0 2px white;
-      //border: none;
       -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
          border-radius: 15px;
@@ -108,11 +102,9 @@
     }
     
     .formInputO {
-      width: 680px;
-      padding: 15px 10px;
+      width: 47vw;
+      padding: 1.8vh 1vw;
       background-color: #5bccf6;
-      //box-shadow: 0 0 0 2px white;
-      //border: none;
       -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
          border-radius: 15px;
@@ -122,12 +114,10 @@
     }
     
     .formInputM {
-      width: 680px;
-      height: 180px;
-      padding: 15px 10px;
+      width: 47vw;
+      height: 23vh;
+      padding: 1.8vh 1vw;
       background-color: #5bccf6;
-      //box-shadow: 0 0 0 2px white;
-      //border: none;
       -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
          border-radius: 15px;
@@ -140,7 +130,6 @@
       background-color: #5bccf6;
       outline: none !important;
       border-color: rgba(crimson, 0.8);
-      //box-shadow: 0 0 0 2px crimson;
       color: rgba(crimson, 0.8);
     }
     
@@ -148,7 +137,6 @@
       background-color: #5bccf6;
       outline: none !important;
       border-color: rgba(crimson, 0.8);
-      //box-shadow: 0 0 0 2px crimson;
       color: rgba(crimson, 0.8);
     }
     
@@ -156,7 +144,6 @@
       background-color: #5bccf6;
       outline: none !important;
       border-color: rgba(crimson, 0.8);
-      //box-shadow: 0 0 0 2px crimson;
       color: rgba(crimson, 0.8);
     }
     
@@ -195,16 +182,16 @@
     
     .errorMessage {
       color: crimson;
-      font-size: 14px;
+      font-size: 0.9vw;
       margin: 0;
       padding: 0;
     }
     
     #notifyToast {
-      color: #fff;
+      color: black;
       border-radius: 6px;
-      width: 200px;
-      margin-left: 75px;
+      width: 13.9vw;
+      //margin-left: 5.2vw;
       background-color: white;
     }
     
@@ -212,10 +199,10 @@
       background-color: #5bccf6;
       color: white !important;
       text-shadow: 1px 1px rgb(128, 128, 128);
-      padding: 15px 50px;
+      padding: 1.7vh 3.5vw;
       border: 2px solid white;
       border-radius: 10px;
-      margin-bottom: 25px;
+      margin-bottom: 2.8vh;
     }
     
     .submit-btn:hover {
@@ -232,129 +219,80 @@
     
     @media (max-width: 768px) {
       .submit-message {
-        width: 125px;
-        margin-left: 200px;
+        width: 8.7vw;
+        margin-left: 13.8vw;
       }
     }
   }
 }
 
   .Parent{
-      z-index: 10;
+      z-index: 2;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
       align-items: center;
       justify-content: center;
-      margin: 0 10px; 
+      margin: 0 0.7vw; 
 
       .Column{
         display: flex;
         color: white;
         text-shadow: 1px 1px rgb(128, 128, 128);
-        height: 70px;
-        line-height: 70px;
-        //text-align: center;
+        height: 7.8vh;
+        line-height: 7.8vh;
         align-items: center;
         justify-content: center;
         background-color: transparent;
-        margin: 5px 20px;
+        margin: 0.6vh 1.4vw;
         border: 2px solid white;
         border-radius: 20px;
 
         .Icon{
-          width: 40px;
-          height: 40px;
-          //color: rgba(221, 39, 75, 0.979);
+          width: 2.8vw;
+          height: 4.4vh;
           color: $main2;
-          margin-right: 15px;
+          margin-right: 1.1vw;
           background-color: white;
           border-radius: 5px;
-          //margin-top: 80px;
         }
       }
     
-  }
-
-  /*.inform{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 300px;
-    color: white;
-
-
-    p{
-      width: 200px;
-      background-color: crimson;
-      border-radius: 15px;
-
-      .sIconP{
-        width: 60px;
-        height: 60px;
-      }
-
-    }
-
-  }*/
-
-  
+  }  
 
   svg {
-    height: 20px;
-    width: 1500px;
-    background-color: crimson;
-    //position: absolute;
-    //width: 100vw;
-    //height: 100px;
-    //display: none;
-  }
-
-  /*svg defs{
-    height: 0;
-    position: absolute;
-    width: 0;
-  }*/
-   
-  /*footer {
-    
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -200px;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 3rem;
-    justify-content: center;
-    overflow: hidden;
-    position: absolute;
     width: 100vw;
-    height: 400px;
-    bottom: 0;
-    filter: url("#goo");
-  }*/
+    height: 20px;
+    background-color: $main4;
+  }
 
   .Footer{
     position: relative;
-    height: 200px;
-    //margin-top: -200px;
+    width: 100vw;
+    height: 22.2vh;
     margin-bottom: 0;
     bottom: 0;
     left: 0;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 3rem;
+    padding-bottom: 1.3rem;
     justify-content: center;
-    //overflow: hidden;
-    //position: absolute;
-    width: 100vw;
-    height: 200px;
+    
     bottom: 0;
     filter: url("#goo");
 
-      h3 {
+      .hLeft {
+        z-index: 2;
+        color: white;
+        margin-right: 53.47vw;
+        text-shadow: 1px 1px rgb(128, 128, 128);
+        float: left;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: lighter;
+        font-size: calc(2vmin + 8px);
+      }
+
+      .hRight {
         z-index: 2;
         color: white;
         text-shadow: 1px 1px rgb(128, 128, 128);
@@ -368,10 +306,7 @@
         font-weight: bold;
         color: white;
         text-shadow: 1px 1px rgb(128, 128, 128);
-        //text-shadow: 0 0 15px rgba(255, 160, 54, 0.4);
       }
-    
-      
     
       @media only screen and (max-width: 700px) {
         ::after {
@@ -396,37 +331,37 @@
         }
       }
 
-    @keyframes up {
-      0% {
+      @keyframes up {
+        0% {
+          bottom: 0px;
+          width: 40px;
+          height: 40px;
+      }
+      50% {
+        bottom: 40px;
+      }
+      100% {
         bottom: 0px;
-        width: 40px;
-        height: 40px;
+        width: 100px;
+        height: 100px;
+      }
     }
-    50% {
-      bottom: 40px;
-    }
-    100% {
+  
+    @keyframes up-small {
+    0% {
       bottom: 0px;
       width: 100px;
       height: 100px;
     }
+    50% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 0px;
+      width: 0px;
+      height: 0px;
+    }
   }
-
-  @keyframes up-small {
-  0% {
-    bottom: 0px;
-    width: 100px;
-    height: 100px;
-  }
-  50% {
-    bottom: 150px;
-  }
-  100% {
-    bottom: 0px;
-    width: 0px;
-    height: 0px;
-  }
-}
   
 
 }
@@ -443,24 +378,4 @@
 }
 }
 
-
-    //flex-direction: column;
-
-
-
-/*body {
-    font-family: Poppins;
-    background: #5bccf6;
-    line-height: 26px;
-    margin: 0;
-  }
-  
-h1 {
-    color: var(--green);
-}
-  
-  .App {
-    height: 75vh;
-    margin-top: 15vh;
-  }*/
 

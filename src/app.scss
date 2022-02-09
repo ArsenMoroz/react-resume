@@ -4,12 +4,11 @@
     .sections{
         width: 100%;
         height: calc(100vh - 70px);
-        //background-color: crimson;
         position: relative;
         top: 70px;
         overflow-x: hidden;
         scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
+        //scroll-snap-type: y mandatory;
         scrollbar-width: none; //Firefox only
         &::-webkit-scrollbar{
             display: none;

@@ -79,14 +79,14 @@ const ContactForm = () => {
         .css({
           bottom: "0px",
           left: Math.random() * window.innerWidth - 50,
-          "animation-delay": Math.random() * 5 + "s",
+          "animation-delay": Math.random() * 10 + "s",
           transform: "translateY(" + Math.random() * 10 + "px)",
           "background-color": colors[i % 2]
         });
     }
   }
 
- //generateBalls();
+ generateBalls();
    
   window.addEventListener("resize", function (e) {
     $(".gooey-animations .ball").remove();
@@ -197,17 +197,16 @@ const ContactForm = () => {
         <div className="Column"><EmailIcon className="Icon"/>arsenmorozz1@gmail.com</div>
         <div className="Column"><LocationOnIcon className="Icon"/>Toronto ON, Canada</div>
       </div>
-    
+
       <div className="Footer">
 
         <div className="gooey-animations">
-          {generateBalls()}
         </div>
-        <h3>This portfolio was made by <span>Arsen Moroz</span></h3>
-        <h3>©2022 erudite.</h3>
+        <h3 className="hLeft">This portfolio was made by <span>Arsen Moroz</span></h3>
+        <h3 className="hRight">©2022 erudite.</h3>
       </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
           <filter id="goo">
             <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
@@ -225,7 +224,6 @@ const ContactForm = () => {
               </clipPath>
           </defs>
       </svg>
-
 
                         
     </div>

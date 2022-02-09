@@ -59,12 +59,12 @@
 
     .skillsContainer{
         width: 100%;
-        height: 360px;
+        height: 40vh;
         margin: 15px 0;
         //background-color: crimson;
 
         .container{
-            width: 80%;
+            width: 80vw;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -82,8 +82,8 @@
                 background: linear-gradient(110deg, #eb879bef, #60abf1 ) !important;
                 box-shadow: 0px 0px 15px -8px black;
                 overflow: hidden;
-                width: 150px;
-                height: 150px;
+                width: 10.5vw;
+                height: 17.5vh;
                 border-radius: 20px;
                 border: 1px solid $blue;
                 margin: 10px 20px;
@@ -141,7 +141,7 @@
     }
 
     .arrow{
-        height: 50px;
+        height: 5.5vh;
         position: absolute;
 
         @include mobile{
@@ -149,31 +149,21 @@
         }
 
         &.left{
-            margin-top: 90px;
-            left: 100px;
+            margin-top: 10vh;
+            left: 6.94vw;
             transform: rotateY(180deg);
             cursor: pointer;
         }
 
         &.right{
-            margin-top: 90px;
-            right: 100px;
+            margin-top: 10vh;
+            right: 6.94vw;
             cursor: pointer;
         }
     }
 
     .slider{
-        /*//width: 100vh;
-        //width: 100%;
-        height: 200px;
-        display: flex;
-        position: absolute;
-        //align-items: center;
-        //justify-content: center;
-        //left: 0;
-        margin: 20px 0;
-        transition: all 1s ease-out;*/
-        height: 200px;
+        height: 22.2vh;
         display: flex;
         position: absolute;
         left: 0;
@@ -187,14 +177,13 @@
         }
 
         .Container{
-            //overflow: hidden;
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
 
             .item{
-                width: 910px;
+                width: 63.2vw;
                 height: 100%;
                 background: linear-gradient(110deg, #eb879bef, #60abf1 ) !important;
                 box-shadow: 0px 0px 15px -8px black;
@@ -229,32 +218,7 @@
                             height: 100%;
                         }
 
-                        /*.imgContainer{
-                            display: flex;
-                            flex-direction: row;
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-                            background-color: $main1;
-                            overflow: hidden;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-
-                            @include mobile{
-                                width: 20px;
-                                height: 20px;
-                            }*/
-
-                            /*img{
-                                width: 25px;
-
-                                @include mobile{
-                                    width: 15px;
-                                }
-                            }*/
-
-
+            
                             h2{
                                 color: white;
                                 text-shadow: 1px 1px rgb(128, 128, 128);
@@ -272,7 +236,6 @@
                                 border-radius: 13px;
                                 height: 15px;
                                 position: relative;
-                                background: white;
                                 overflow: hidden;
                             }
 
@@ -284,7 +247,7 @@
                             .progress {
                                 height: 10px;
                                 background-color: #ffa500;
-                                animation: progressBar 4s ease-in-out;
+                                animation: progressBar 2s ease-in-out;
                                 animation-fill-mode:both; 
                             }
 
@@ -292,15 +255,7 @@
                               0% { width: 0; }
                               100% { width: 100%; }
                             }
-
-
-                            /*i{
-                                display:flex;
-                                //width: 150px;
-                                //height: 150px;
-                            }*/
-                            
-
+                        
                             p{
                                 color: white;
                                 text-shadow: 1px 1px rgb(128, 128, 128);
@@ -323,7 +278,6 @@
                                 cursor: pointer
                             }
                         }
-                    //}
                 }
 
                 .right{
@@ -335,10 +289,9 @@
                     overflow: hidden;
 
                     img{
-                        //justify-content: center;
-                        margin-right: 7px;
-                        width: 420px;
-                        //transform: rotate(-8deg);
+                        margin-right: 0.48vw;
+                        margin-top: 1.2vh;
+                        width: 29.2vw;
 
                     }
                 }

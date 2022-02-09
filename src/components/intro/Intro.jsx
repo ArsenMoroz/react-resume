@@ -25,8 +25,10 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hi There, I'm 
-                    <img src="assets/crown.png" alt="" />
+                
+                    <h2>
+                        <img src="assets/crown.png" alt="" />
+                        Hi There, I'm 
                     </h2>
                     
                     <h1>Arsen Moroz</h1>

@@ -1,5 +1,5 @@
 body {
-    align-items: center;
+    /*align-items: center;*/
     background-color: #5bccf6;
   }
   
@@ -49,9 +49,16 @@ body {
     */
   }
   
-  .date {
-    color: rgb(201, 251, 255);
+  .vertical-timeline-element-date {
+    opacity: 1;
+    color: black;
+    margin: 0 1.5em;
+    
   }
+
+  /*.date {
+    color: rgb(241, 0, 0);
+  }*/
   
   #description {
     margin: 1.5em 0 2em 0;
@@ -80,13 +87,14 @@ body {
     background-color: #459df0;
   }
   
-  @media only screen and (max-width: 1700px) {
+  @media only screen and (max-width: 1170px) {
     .vertical-timeline-element-date {
       display: block !important;
       float: none !important;
-      color: rgb(0, 0, 0);
-      /*margin-top: 1.5em;*/
-      margin: 0 1.5em;
+      color: black;
+      opacity: 1;
+      margin-left: 0;
+      margin-top: 1.5vh; 
     }
   }
   
