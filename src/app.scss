@@ -23,10 +23,10 @@
             scroll-snap-align: start;
         }
 
-        @media only screen and (max-width: 425px) {
-            height: calc(730px - 70px);
+        /*@media only screen and (max-width: 425px) {
+            height: calc(100vh - 70px);
             scroll-snap-type: y mandatory;
-        }
+        }*/
 
     }
 }
