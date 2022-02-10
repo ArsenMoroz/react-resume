@@ -1,81 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "../../global.scss";
 
-.contact{
-    background-color: $main2;
+*, *:before, *:after {
+   box-sizing: border-box;
+}
+
+.containerBox{
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+
+  @include mobile{
+    padding: 0;
+  }
+
+  .smallerBox{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+  .left{
+    flex: 0.7;
+    margin-left: 1vw;
+        
+        .imgContainer{
+            width: 47vw;
+            background-color: $main2;
+            border-radius: 50%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+
+            @include mobile{
+                align-items: flex-start;
+              }
+
+            img{
+                width: 100%;
+
+                @include mobile{
+                    align-items: center;
+                    width: 50%;
+                    height: 50%;
+                  }
+            }
+        }
+        @include mobile{
+          display: none;
+          margin: 0;
+        }
+  }
+
+  .right{
+    align-items: center;
+    margin-left: 1vw;
 
     @include mobile{
-        flex-direction: column;
+      margin-left: 0;
     }
 
-    .left{
-        flex: 1;
-        overflow: hidden;
-
-        img{
-            height: 100%;
-        }
-    }
-
-    .right{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        h2{
-            font-style: 30px;
-        }
-        
-        form{
-            width: 70%;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
+    h1.mainP{
+            width: 35vw;
+            margin-left: 12vw;
+            overflow: hidden;
             align-items: center;
             justify-content: space-around;
+            $random-text: 'Contact Me';
+            position: relative;
+            text-transform: uppercase;
+            font-size: 4.1vw;
+            font-family: 'Catamaran', sans-serif;
+            color: rgba(crimson, 0.8);
 
-            input{
-                width: 300px;
-                height: 30px;
-                font-style: 14px;
-
-                @include mobile{
-                    width: 200px;
-                    height: 20px;
-                }
-            }
-            
-            textarea{
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
-
-                @include mobile{
-                    width: 200px;
-                    height: 100px;
-                }
+            &:before {
+              width: 100%;
+              position: absolute;
+              content: $random-text;
+              color: rgba($blue, 0.8);
+              top: 3px;
+              left: 4px;
             }
 
-            button{
-                width: 150px;
-                height: 30px;
-                color: white;
-                background-color: $main1;
-                border: none;
-                border-radius: 10px;
-                font-weight: 500;
-                cursor: pointer;
-
-                &:focus{
-                    outline: none;
-                }
+            &:after {
+              width: 100%;
+              z-index: 2;
+              position: absolute;
+              content: $random-text;
+              color: rgba(white, 0.8);
+              top: 6px;
+              left: 8px;
             }
 
-            span{
-                color: $main1;
+            @include mobile{
+              width: 100vw;
+              margin: 0;
+              font-size: 35px;
+              text-align: center;
             }
-        }
+    
     }
+    
+    form {
+      margin-top: 2.3vh;
+      background: #5bccf6;
+
+      @include mobile{
+        box-sizing: border-box;
+      }
+    }
+    
+    .formRow {
+      margin: 1.15vh 0 2.3vh 0;
+      width: 48vw;
+    }
+    
+    .formInputT {
+      width: 22.9vw;
+      padding: 1.8vh 1vw;
+      background-color: #5bccf6;
+      -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+         border-radius: 15px;
+         border: 2px solid white;
+      color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
+
+      @include mobile{
+        width: 65vw;
+      }
+    }
+    
+    .formInputO {
+      width: 47vw;
+      padding: 1.8vh 1vw;
+      background-color: #5bccf6;
+      -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+         border-radius: 15px;
+         border: 2px solid white;
+      color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
+
+      @include mobile{
+        width: 89vw;
+      }
+    }
+    
+    .formInputM {
+      width: 47vw;
+      height: 23vh;
+      padding: 1.8vh 1vw;
+      background-color: #5bccf6;
+      -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+         border-radius: 15px;
+         border: 2px solid white;
+      color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
+
+      @include mobile{
+        width: 89vw;
+        height: 15vh;
+      }
+    }
+    
+    .formInputO:focus {
+      background-color: #5bccf6;
+      outline: none !important;
+      border-color: rgba(crimson, 0.8);
+      color: rgba(crimson, 0.8);
+    }
+    
+    .formInputT:focus {
+      background-color: #5bccf6;
+      outline: none !important;
+      border-color: rgba(crimson, 0.8);
+      color: rgba(crimson, 0.8);
+    }
+    
+    .formInputM:focus {
+      background-color: #5bccf6;
+      outline: none !important;
+      border-color: rgba(crimson, 0.8);
+      color: rgba(crimson, 0.8);
+    }
+    
+    .formInputO::placeholder {
+      color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
+      opacity: 1;
+    }
+    
+    .formInputT::placeholder {
+      color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
+      opacity: 1;
+    }
+    
+    .formInputM::placeholder {
+      color: white;
+      text-shadow: 1px 1px rgb(128, 128, 128);
+      opacity: 1;
+    }
+    
+    .formInputO:focus::placeholder {
+      color: crimson;
+      opacity: 1;
+    }
+    
+    .formInputT:focus::placeholder {
+      color: crimson;
+      opacity: 1;
+    }
+    
+    .formInputM:focus::placeholder {
+      color: crimson;
+      opacity: 1;
+    }
+    
+    .errorMessage {
+      color: crimson;
+      font-size: 0.9vw;
+      margin: 0;
+      padding: 0;
+
+      @include mobile{
+        display: none;
+      }
+    }
+    
+    #notifyToast {
+      color: black;
+      border-radius: 6px;
+      width: 13.9vw;
+      background-color: white;
+    }
+
+    .Toastify__close-button{
+      align-self: center;
+    }
+
+    .Toastify__toast-container--bottom-right{
+      right: 7em;
+      bottom: 0;
+    }
+    
+    .submit-btn {
+      background-color: #5bccf6;
+      color: white !important;
+      text-shadow: 1px 1px rgb(128, 128, 128);
+      padding: 1.7vh 3.5vw;
+      border: 2px solid white;
+      border-radius: 10px;
+      margin-bottom: 2.8vh;
+    }
+    
+    .submit-btn:hover {
+      background-color: rgba(crimson, 0.9);
+      color: #5bccf6 !important;
+      border: 2px solid crimson;
+    }
+    
+    .submit-btn:disabled:hover {
+      background-color: #5bccf6;
+      color: crimson !important;
+      cursor: wait;
+    }
+    
+    @media (max-width: 768px) {
+      .submit-message {
+        width: 8.7vw;
+        margin-left: 13.8vw;
+      }
+    }
+  }
 }
+
+  .Parent{
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0.7vw; 
+
+      .Column{
+        display: flex;
+        color: white;
+        text-shadow: 1px 1px rgb(128, 128, 128);
+        height: 7.8vh;
+        line-height: 7.8vh;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        margin: 0.6vh 1.4vw;
+        border: 2px solid white;
+        border-radius: 20px;
+
+        .Icon{
+          width: 2.8vw;
+          height: 4.4vh;
+          color: $main2;
+          margin-right: 1.1vw;
+          background-color: white;
+          border-radius: 5px;
+        }
+      }
+
+      @include mobile{
+        grid-template-columns: 0.9fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        font-size: 15px;
+        height: 20px;
+      }
+    
+  }  
+
+  svg {
+    width: 100vw;
+    height: 25px;
+    background-color: $main4;
+
+    @include mobile{
+      display: none;
+    }
+  }
+
+  .Footer{
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    margin-bottom: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1.3rem;
+    justify-content: center;
+    bottom: 0;
+
+      .hLeft {
+        z-index: 2;
+        color: white;
+        margin-right: 53.47vw;
+        text-shadow: 1px 1px rgb(128, 128, 128);
+        float: left;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: lighter;
+        font-size: calc(2vmin + 8px);
+      }
+
+      .hRight {
+        z-index: 2;
+        color: white;
+        text-shadow: 1px 1px rgb(128, 128, 128);
+        float: left;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: lighter;
+        font-size: calc(2vmin + 8px);
+      }
+
+      h1 span {
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px rgb(128, 128, 128);
+      }
+    
+      @media only screen and (max-width: 700px) {
+        ::after {
+          clip-path: none;
+          height: 150px;
+        }
+      }
+    
+      .ball {
+        z-index: -3;
+        width: 70px;
+        height: 70px;
+        border-radius: 45%;
+        background-color: crimson;
+        position: absolute;
+        animation: up 5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+      }
+    
+      @media only screen and (max-width: 700px) {
+        .ball {
+          animation: up-small 5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+        }
+      }
+
+    @keyframes up {
+      0% {
+        bottom: 0px;
+        width: 40px;
+        height: 40px;
+      }
+      50% {
+        bottom: 40px;
+      }
+      100% {
+        bottom: 0px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  
+    @keyframes up-small {
+      0% {
+        bottom: 0px;
+        width: 100px;
+        height: 100px;
+      }
+      50% {
+        bottom: 150px;
+      }
+      100% {
+        bottom: 0px;
+        width: 0px;
+        height: 0px;
+      }
+    }
+  
+    @include mobile{
+      display: none;
+    }
+  } 
+
+  .Footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    clip-path: url("#wave");
+    background-color: crimson;
+  }
+
+}
+
+

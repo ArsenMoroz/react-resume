@@ -7,15 +7,6 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="cut-text">erudite.</a>
-                    {/*<div className="itemContainer">
-                        <PersonOutline className="icon" />
-                        <span>+1 437 985 0558</span>
-                    </div>
-                    <div className="itemContainer">
-                        <MailOutline className="icon" />
-                        <span>arsenmorozz1@gmail.com</span>
-                    </div>*/}
-
                 </div>
                 <div className="right">
                     <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>

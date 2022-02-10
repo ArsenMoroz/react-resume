@@ -5,7 +5,7 @@ import {
     featuredPortfolio,
     webPortfolio,
     mobilePortfolio
-} from "../../data";
+} from "./portfolioData";
 
 export default function Portfolio() {
 

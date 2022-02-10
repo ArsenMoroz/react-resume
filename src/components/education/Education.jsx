@@ -1,6 +1,6 @@
 import React from 'react'
 import "./education.scss"
-import TimeLineEd from "../timeline/TimeLineEd.js"
+import EducationTimeline from "../timeline/EducationTimeline.js"
 
 
 export default function resume() {
@@ -11,7 +11,7 @@ export default function resume() {
                 </div>
                 
                 <div className="container">
-                    <TimeLineEd/>
+                    <EducationTimeline/>
                 </div>
             </div>
     )

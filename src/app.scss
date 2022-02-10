@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 .app{
     height: 100vh;
 
@@ -5,10 +7,11 @@
         width: 100%;
         height: calc(100vh - 70px);
         position: relative;
+        
         top: 70px;
         overflow-x: hidden;
         scroll-behavior: smooth;
-        //scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
         scrollbar-width: none; //Firefox only
         &::-webkit-scrollbar{
             display: none;
@@ -19,5 +22,11 @@
             height: calc(100vh - 70px);
             scroll-snap-align: start;
         }
+
+        @media only screen and (max-width: 425px) {
+            height: calc(730px - 70px);
+            scroll-snap-type: y mandatory;
+        }
+
     }
 }

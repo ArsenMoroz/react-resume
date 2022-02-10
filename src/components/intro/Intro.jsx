@@ -1,14 +1,12 @@
 import "./intro.scss"
 import { init } from "ityped"
 import { useEffect, useRef } from "react"
-//import { ProgressBar } from 'react-bootstrap';
 
 export default function Intro() {
 
     const textRef = useRef();
     
     useEffect(()=>{
-        //console.log(textRef); check this function after completion
         init(textRef.current, {
             backDelay: 800,
             showCursor: true,

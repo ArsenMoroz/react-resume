@@ -1,6 +1,6 @@
 import React from 'react'
 import "./experience.scss"
-import TimeLine from "../timeline/TimeLine.js"
+import ExperienceTimeline from "../timeline/ExperienceTimeline.js"
 
 
 export default function resume() {
@@ -11,7 +11,7 @@ export default function resume() {
                 </div>
                 
                 <div className="container">
-                    <TimeLine/>
+                    <ExperienceTimeline/>
                 </div>
             </div>
     )

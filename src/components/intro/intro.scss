@@ -14,12 +14,12 @@
         overflow: hidden;
         
         .imgContainer{
-            width: 910px; //862
-            height: 910px; //862
+            width: 910px;
+            height: 910px;
             background-color: $main2;
             border-radius: 50%;
             display:flex;
-            align-items: center;//flex-end
+            align-items: center;
             justify-content: center;
             float: right;
 
@@ -59,6 +59,7 @@
             h1{
                 font-size: 70px;
                 margin-bottom: 10px;
+                text-shadow: 4px 3px 0px $main2, 9px 8px 0px rgba(0,0,0,0.15);
 
                 
 

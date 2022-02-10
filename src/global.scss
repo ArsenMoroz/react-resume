@@ -1,44 +1,18 @@
-$main1: white;
-$main2: #5bccf6;
-$main3: #030e12;
-$main4: crimson;
-
-$width: 768px;
-
-// Color
-//$brown: #2b2520;
-//$green: #39dbc2;
-//$pink: #f41fbf;
-//$yellow: #ffed28;
-//$purple: #b028ff;
-$blue: #49A7FF;
-//$red: #ff3838;
-//$orange: #db7953;
-
-// Font
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap');
 
+$main1: white;
+$main2: #5bccf6;
+$main3: #030e12;
+$main4: crimson;
+$blue: #49A7FF;
 
-// Size
-//$extra-large: 110px;
-//$large: 84px;
-
-//*, *:before, *:after {
-//  box-sizing: border-box;
-//}
-
+$width: 768px;
   
 @mixin mobile {
     @media (max-width: #{$width}){
         @content
     }
-}
-
-@mixin tablet {
-  @media (min-width: 900px) { 
-    @content; 
-  }
 }

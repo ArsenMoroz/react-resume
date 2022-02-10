@@ -10,10 +10,11 @@
         justify-content: space-around;
     }
 
-    // Style 5, cyber-text
     .cyber-text {
+
         overflow: hidden;
-        width: 450px;
+        width: 100%;
+        text-align: center;
         align-items: center;
         justify-content: center;
         $random-text: 'Testimonials';
@@ -23,25 +24,27 @@
         font-family: 'Catamaran', sans-serif;
         color: rgba(crimson, 0.8);
         &:before {
+          width: 100%;
           position: absolute;
+          text-align: center;
           content: $random-text;
           color: rgba($blue, 0.8);
           top: 3px;
           left: 4px;
         }
         &:after {
+            width: 100%;
             z-index: 2;
             position: absolute;
+            text-align:center;
             content: $random-text;
             color: rgba(white, 0.8);
             top: 6px;
             left: 8px;
         }
 
-        //font-size: 50px;
-
         @include mobile{
-            font-size: 20px;
+            font-size: 35px;
         }
     }
         
@@ -58,7 +61,7 @@
         }
 
         .card{
-            color: #ffffff;
+            color: #fffafa;
             background: linear-gradient(110deg, #eb93a5ef, #76b5f0 ) !important;
             width: 250px;
             height: 70%;
@@ -71,7 +74,7 @@
             transition: all 1s ease;
 
             @include mobile{
-                height: 180px;
+                height: 190px;
                 margin: 10px 0;
             }
 
@@ -82,7 +85,7 @@
 
                 @include mobile{
                     width: 250px;
-                    height: 180px;
+                    height: 195px;
                     margin: 1px;
                 }
             }
@@ -97,9 +100,6 @@
                 justify-content: center;
 
                 img{
-                    //border: 2px solid crimson; //*
-                    //border-color: $main4;
-
                     &.left,
                     &.right{
                         height: 20px;
@@ -112,8 +112,8 @@
                         margin: 0 30px;
 
                         @include mobile{
-                            width: 30px;
-                            height: 30px;
+                            width: 50px;
+                            height: 50px;
                         }
                     }
                 }
@@ -122,9 +122,8 @@
             .center{
                 padding: 10px;
                 border-radius: 10px;
-                background-color: $main2;//#a9dff8;
-                //text-shadow: 1px 1px rgb(128, 128, 128);
-                text-shadow: 1px 1px rgb(128, 128, 128);
+                background: linear-gradient(110deg, rgba(221, 77, 106, 0.404), rgba(218, 79, 107, 0.411) ) !important;
+                text-shadow: 1px 1px rgb(41, 41, 41);               
 
                 @include mobile{
                     font-size: 12px;
@@ -145,7 +144,7 @@
                     opacity: 80%;
 
                     @include mobile{
-                        font-siz: 14px;
+                        font-size: 12px;
                     }
                 }
 
@@ -154,7 +153,7 @@
                     opacity: 90%;
 
                     @include mobile{
-                        font-siz: 13px;
+                        font-size: 11px;
                     }
                 }
             }

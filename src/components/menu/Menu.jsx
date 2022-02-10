@@ -2,7 +2,7 @@ import "./menu.scss"
 
 export default function Menu({menuOpen, setMenuOpen}) {
     return (
-        <div> {/* Create a new component to avoid code dupplication in the ul*/}
+        <div>
             <div className={"menu " + (menuOpen && "active")}>
                 <ul> 
                     <li onClick ={()=> setMenuOpen(false)}>
