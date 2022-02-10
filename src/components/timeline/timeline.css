@@ -1,5 +1,4 @@
 body {
-    /*align-items: center;*/
     background-color: #5bccf6;
   }
   
@@ -20,33 +19,6 @@ body {
     background: linear-gradient(110deg, #eb93a5ef, #76b5f0 ) !important;
     color: white;
     text-shadow: 1px 1px rgb(102, 102, 102);
-    /*
-    background: linear-gradient(315deg, #5bccf6, #dc143c) !important;)
-    background: linear-gradient(315deg, #5bccf6, #f9c74f) !important;))
-    background: linear-gradient(315deg, #5bccf6, #06D6A0) !important;)))
-    background: linear-gradient(315deg, #b6dcff, #b9b6e5) !important;(
-    background: linear-gradient(315deg, #4facfe, #6699ff) !important;)
-    background: linear-gradient(315deg, #d1c3fc, #9bc4fc) !important;)
-    background: linear-gradient(315deg, #84f5de, #4cc5f8) !important;)
-    background: linear-gradient(315deg, #f8ca9d, #fccdba) !important;))
-    background: linear-gradient(315deg, #5bccf6, #fccdba) !important;)
-    background: linear-gradient(315deg, rgba(255, 255, 255, 1), rgba(6, 214, 160, 0.8)) !important;
-    background: linear-gradient(315deg, #087ee1, #05e8ba) !important;
-    background: linear-gradient(315deg, #f6ebe6, #aee1f9) !important;))))
-    background: linear-gradient(315deg, #98fcbd, #9cdaf8) !important;)))
-    background: linear-gradient(315deg, #48a9fe, #0beef9) !important;)))
-    background: linear-gradient(315deg, #fcd000, #76daff) !important;)
-    background: linear-gradient(315deg, #f6d285, #bbf0f3) !important;))
-    background: linear-gradient(315deg, #ffdd00, #fbb034) !important;)))
-    background: linear-gradient(315deg, rgba(255, 221, 0, 0.9), rgba(251, 176, 52, 0.9)) !important;
-    background: linear-gradient(315deg, #aacaef, #fde7f9 ) !important;
-
-    .
-    yellow one background: linear-gradient(110deg, #fbd0cce8,#f5efbef3 ) !important;))))))))))
-    green one background: linear-gradient(110deg, #fbd0cce8,#bef5c5f3 ) !important;)))
-
-    .
-    */
   }
   
   .vertical-timeline-element-date {
@@ -54,12 +26,7 @@ body {
     color: #000000;
     text-shadow: 1px 1px rgb(141, 136, 136);
     margin: 0 1.5em;
-    
   }
-
-  /*.date {
-    color: rgb(241, 0, 0);
-  }*/
   
   #description {
     margin: 1.5em 0 2em 0;
