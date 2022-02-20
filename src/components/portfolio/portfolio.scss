@@ -60,6 +60,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        transition: all 0.5s ease;
 
         @include mobile{
             width: 100%;
@@ -67,9 +68,13 @@
 
         .item{
             overflow: hidden;
-            width: 240px;
+            width: 260px;
             height: 180px;
             border-radius: 20px;
+
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+
             border: 1px solid $blue;
             box-shadow: 0px 0px 15px -8px black;
             margin: 15px 20px;
@@ -105,6 +110,7 @@
 
             &:hover{
                 background-color: $main4;
+                transform: scale(1.1);
                 text-shadow: 1px 1px rgb(128, 128, 128);
                 transition: all 0.5s ease;
                 img{
